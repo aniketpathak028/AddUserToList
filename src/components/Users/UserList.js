@@ -7,7 +7,7 @@ function UserList(props) {
       <Card className={classes.users}>
         <ul>
           {props.users.map((user) => (
-            <li>
+            <li key={user.user_id}>
               {user.username} ({user.age} years old)
             </li>
           ))}
