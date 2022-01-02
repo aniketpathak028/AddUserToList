@@ -13,6 +13,7 @@ function App() {
 
   return (
     <React.Fragment>
+    {`THE TIME IS: ${setInterval(() => new Date()), 1000 }`}
       <AddUser onAddUser={addUserHandler} />
       <UserList users={usersList} />
     </React.Fragment>
